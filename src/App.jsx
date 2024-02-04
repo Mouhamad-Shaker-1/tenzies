@@ -104,7 +104,7 @@ function App() {
           { tenzies &&
               <>
                   <p>the number of roll is {numberRoll}</p>
-                  <p>you take {theTime()} second time to complent the roll</p>
+                  <p>You took {theTime()} seconds to complete the game</p>
               </>
           }
       </main>
