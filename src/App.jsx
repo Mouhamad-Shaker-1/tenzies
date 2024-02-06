@@ -74,11 +74,8 @@ function App() {
   ))
 
   function theTime() {
-
     let endDate   = new Date();
     let seconds = (endDate.getTime() - time.getTime()) / 1000;
-
-    console.log(seconds)
     return seconds
   }
 
@@ -102,10 +99,10 @@ function App() {
               {tenzies ? "New Game" : "Roll"}
           </button>
           { tenzies &&
-              <>
-                  <p>the number of roll is {numberRoll}</p>
+              <div className='containerInfo'>
+                  <p>The number of roll is {numberRoll}.</p>
                   <p>You took {theTime()} seconds to complete the game</p>
-              </>
+              </div>
           }
       </main>
   )
